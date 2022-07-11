@@ -4,13 +4,8 @@ from pynput import keyboard
 mouse = Controller()
 
 def on_press(key):
-    try:
-        print('{0}'.format(
-            key.char))
-    except AttributeError:
-        print('{0}'.format(
-            key))
-    if key == keyboard.Key.esc:
+
+    if key == keyboard.Key.f6:
         # Stop listener
         return False
 
